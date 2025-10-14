@@ -26,6 +26,18 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
+            int id = navDestination.getId();
+            if(id == R.id.navigation_splash
+                    || id == R.id.navigation_login
+                    || id == R.id.navigation_registrar
+                    || id == R.id.navigation_verificar
+                    || id == R.id.navigation_pedidoSeleccionar
+                    || id == R.id.navigation_pedidoPersonalizar) {
+                navView.setVisibility( BottomNavigationView.INVISIBLE );
+            }
+        });
     }
 
 }

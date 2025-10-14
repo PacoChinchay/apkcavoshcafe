@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_navigation_login_to_navigation_registrar"
             app:destination="@id/navigation_registrar" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_inicio"
+            app:destination="@id/navigation_inicio" />
     </fragment>
     <fragment
         android:id="@+id/navigation_registrar"
@@ -50,6 +53,9 @@
         <action
             android:id="@+id/action_navigation_inicio_to_navigation_carrito"
             app:destination="@id/navigation_carrito" />
+        <action
+            android:id="@+id/action_navigation_inicio_to_navigation_favoritos"
+            app:destination="@id/navigation_favoritos" />
     </fragment>
     <fragment
         android:id="@+id/navigation_menu"
