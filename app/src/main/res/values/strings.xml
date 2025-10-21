@@ -10,4 +10,13 @@
     <string name="inicio">inicio</string>
     <string name="perfil">perfil</string>
     <string name="carrito">carrito</string>
+    <string name="btn_text">Empezar</string>
+    <string name="text_header_home">Vamos a iniciar sesión</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="registrar">registrar</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="olvidaste">¿olvidaste tu contraseña?</string>
+    <string name="IniciarSesion">Iniciar Secsión</string>
+    <string name="content_description">redes solciales\n</string>
 </resources>

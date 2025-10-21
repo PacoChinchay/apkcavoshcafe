@@ -24,6 +24,12 @@
         <action
             android:id="@+id/action_navigation_login_to_navigation_inicio"
             app:destination="@id/navigation_inicio" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_recuperar"
+            app:destination="@id/navigation_recuperar" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_password"
+            app:destination="@id/navigation_password" />
     </fragment>
     <fragment
         android:id="@+id/navigation_registrar"
@@ -38,7 +44,11 @@
         android:id="@+id/navigation_verificar"
         android:name="pe.edu.senati.apkcavocafe.ui.Verificar"
         android:label="fragment_verificar"
-        tools:layout="@layout/fragment_verificar" />
+        tools:layout="@layout/fragment_verificar" >
+        <action
+            android:id="@+id/action_navigation_verificar_to_navigation_inicio"
+            app:destination="@id/navigation_inicio" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_inicio"
         android:name="pe.edu.senati.apkcavocafe.ui.Inicio"
@@ -95,4 +105,22 @@
         android:name="pe.edu.senati.apkcavocafe.ui.Perfil"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/navigation_password"
+        android:name="pe.edu.senati.apkcavocafe.ui.Password"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_navigation_password_to_navigation_verificar"
+            app:destination="@id/navigation_verificar" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_recuperar"
+        android:name="pe.edu.senati.apkcavocafe.ui.Recuperar"
+        android:label="fragment_recuperar"
+        tools:layout="@layout/fragment_recuperar" >
+        <action
+            android:id="@+id/action_navigation_recuperar_to_navigation_verificar"
+            app:destination="@id/navigation_verificar" />
+    </fragment>
 </navigation>

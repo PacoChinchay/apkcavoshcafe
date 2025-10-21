@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="police_blue">#34536A</color>
+    <color name="gunmetal">#353E43</color>
+    <color name="flesh">#FEE4DE</color>
+    <color name="dust_storm">#E5D0C5</color>
+    <color name="carmine_pink">#E65738</color>
+    <color name="steel_teal">#5A7E99</color>
+    <color name="bright_gray">#EEEEEE</color>
 </resources>
